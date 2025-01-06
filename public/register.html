@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Create Your Account</h1>
+        <h3>Enter your details</h3>
+
+        <form id="register-form">
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" name="username" 
+                placeholder="Enter your Username (min 4 characters)" required>
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="password" 
+                placeholder="Enter your Password (min 4 characters)" required>
+
+            <div class="wrap">
+                <button type="submit">
+                    Create Account
+                </button>
+            </div>
+        </form>
+        
+        <p>Already have an account?
+            <a href="index.html" style="text-decoration: none;">
+                Sign in
+            </a>
+        </p>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

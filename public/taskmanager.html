@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="title">Task Manager</h2>
+                <button id="dark-mode-btn" class="btn">
+                    <i class="fas fa-moon"></i>  <!-- Moon Icon -->
+                </button>
+            </div>
+            <div class="card-content">
+                <form id="add-task-form" class="form">
+                    <input type="text" id="new-task" placeholder="Add a new task..." class="task-input">
+                    <button type="submit" class="btn">Add</button>
+                </form>
+
+                <div class="search-bar">
+                    <input type="text" id="search-task" placeholder="Search tasks..." class="task-input">
+                </div>
+
+                <div class="tabs">
+                    <button class="tab" onclick="filterTasks('all')">All Tasks</button>
+                    <button class="tab" onclick="filterTasks('active')">Active Tasks</button>
+                    <button class="tab" onclick="filterTasks('completed')">Completed Tasks</button>
+                </div>
+
+                <ul id="task-list">
+                    <!-- Task items will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
